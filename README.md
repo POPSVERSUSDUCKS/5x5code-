@@ -1,1 +1,18 @@
-# 5x5code-Hello, I've always been intrigued with the use of communication throught history. Like in the Vietnam War the Americans who were captured, talked to each other by the 5 x 5 code. So without further ado, I'm Julian and here is my Code Translator.
+# 5x5code-
+program factorial;
+
+function factorial(n: integer): longint;
+begin
+    if n = 0 then
+        factorial := 1
+    else
+        factorial := n * factorial(n - 1);
+end;
+
+var
+    n: integer;
+
+begin
+    for n := 0 to 16 do
+        writeln(n, '! = ', factorial(n));
+end.
